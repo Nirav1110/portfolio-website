@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
   { name: "Skills", href: "/skills" },
   { name: "Experience", href: "/experience" },
   { name: "Education", href: "/education" },
@@ -23,8 +22,8 @@ export function Header() {
     <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold">
-            Portfolio
+          <Link href="/" className="flex items-center">
+            <img src="/a.svg" alt="Portfolio Logo" className="h-10 w-auto" />
           </Link>
 
           <nav className="hidden md:flex items-center space-x-6">

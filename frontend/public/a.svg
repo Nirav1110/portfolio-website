@@ -1,0 +1,44 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NP developer logo">
+  <style>
+    :root {
+      /* Light mode defaults */
+      --main: #1E293B;   /* NP + rings */
+      --accent: #0EA5E9; /* developer icon */
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main: #E6EDF3;   /* NP + rings on dark */
+        --accent: #38BDF8; /* developer icon on dark */
+      }
+    }
+    .stroke-main { stroke: var(--main); }
+    .stroke-accent { stroke: var(--accent); }
+  </style>
+
+  <!-- Concentric rings -->
+  <circle cx="256" cy="256" r="225" class="stroke-main" stroke-width="10" opacity="0.35"/>
+  <circle cx="256" cy="256" r="200" class="stroke-main" stroke-width="10" opacity="0.6"/>
+
+  <!-- Developer monitor icon -->
+  <g class="stroke-accent" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Screen -->
+    <rect x="191" y="95" width="130" height="86" rx="12"/>
+    <!-- Stand -->
+    <line x1="256" y1="181" x2="256" y2="204"/>
+    <line x1="226" y1="204" x2="286" y2="204"/>
+    <!-- Code brackets -->
+    <path d="M228 151 L214 143 L228 136"/>
+    <path d="M284 151 L298 143 L284 136"/>
+  </g>
+
+  <!-- NP monogram -->
+  <g class="stroke-main" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <!-- N -->
+    <path d="M160 300 V420 L280 300 V420"/>
+    <!-- P (stem + bowl) -->
+    <path d="M330 420 V300 H380
+             A50 50 0 0 1 380 360 H330"/>
+    <!-- P diagonal accent (keeps style from your reference) -->
+    <path d="M352 308 L405 360"/>
+  </g>
+</svg>
